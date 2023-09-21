@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -15,24 +14,77 @@
     <title>Frontend Mentor | QR code component</title>
 
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
       .attribution {
+        margin-top: 19px;
         font-size: 11px;
         text-align: center;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
+      body {
+        background-color: hsl(212, 45%, 89%);
+        width: 100%;
+        min-height: 100vh;
+        font-family: Outfit;
+      }
+      section {
+        display: flex;
+        min-height: 100vh;
+      }
+      .qr {
+        margin: auto auto;
+      }
+      .qr h1 {
+        color: #1f3251;
+        font-size: 22px;
+      }
+      .qr p {
+        margin-top: 0;
+        color: #7b879d;
+        font-size: 15px;
+        font-weight: 400;
+      }
+      .qr img {
+        max-width: 280px;
+        border-radius: 15px;
+      }
+      .qr-inner {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        max-height: 484px;
+        max-width: 315px;
+        border-radius: 15px;
+        padding: 15px;
+        flex-direction: column;
+        background: white;
+        box-shadow: 0px 1px 1px hsl(212, 45%, 89%);
+      }
     </style>
   </head>
   <body>
-    Improve your front-end skills by building projects Scan the QR code to visit
-    Frontend Mentor and take your coding skills to the next level
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <section>
+      <div class="qr">
+        <div class="qr-inner">
+          <img src="./images/image-qr-code.png" alt="qr" />
+          <h1>Improve your front-end </br> skills by building projects</h1>
+          <p>
+            Scan the QR code to visit Frontend</br>  Mentor and take your coding
+            skills to</br>  the next level
+          </p>
+        </div>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://github.com/vasin-fr/qr-components" _blank
+            >Vasin Oleksii</a
+          >.
+        </div>
+      </div>
+    </section>
   </body>
 </html>
